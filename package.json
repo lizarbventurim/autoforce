@@ -1,0 +1,15 @@
+{
+  "name": "desafio-tecnico-autoforce",
+  "version": "1.0.0",
+  "author": {
+    "name": "Lizarb Venturim",
+    "email": "lizarb@venturim.me"
+  },
+  "dependencies": {
+    "cypress": "^14.0.2"
+  },
+  "scripts": {
+    "cypress:open": "cypress open",
+    "test": "cypress run"
+  }
+}
