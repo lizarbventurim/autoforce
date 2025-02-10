@@ -7,10 +7,12 @@
   },
   "dependencies": {
     "cypress": "^14.0.2",
-    "faker-br": "^0.4.1"
+    "faker-br": "^0.4.1",
+    "prettier": "^3.5.0"
   },
   "scripts": {
     "cypress:open": "cypress open",
-    "test": "cypress run"
+    "test": "cypress run",
+    "format": "prettier --write \"**/*.{js,ts,json,md,yml}\""
   }
 }

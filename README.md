@@ -44,3 +44,10 @@ npm run test
 
 ## Configuração do Cypress
 As configurações do Cypress estão definidas no arquivo *cypress.config.js.*
+
+## Prettier
+O Prettier é uma ferramenta que ajuda a manter o código formatado de maneira consistente. Para formatar o código, utilize o comando:
+
+```sh 
+npm run format
+```
