@@ -10,6 +10,7 @@ Os cenários de teste estão descritos no arquivo [CENARIOS.md](CENARIOS.md).
 
 - Node.js (versão 20 ou superior)
 - npm (gerenciador de pacotes do Node.js)
+- JDK (Java Development Kit) - versão aconselhada 21.2.0 LTS
 
 ## Instalação
 
