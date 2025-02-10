@@ -5,7 +5,7 @@ describe("Validar preenchimento de campos obrigatórios", () => {
   const formLead = '[class="conversion-form"] [class="form__header-title"]'
   const camposObrigatorios = '[class="form__text-field"]'
 
-  it("Validar fluxo de acesso a página de um veículo e enviar o LEAD", () => {
+  it("Validar preenchimento de campos obrigatórios exibinto um alerta com o não preenchimento e tentativa de envio", () => {
     cy.visit("/novos/uno-2021")
     cy.url().should("include", "/novos/uno-2021")
     cy.title().should("eq", "Uno 2021 - é na Layout testes - Showroom Fiat 2.0 - Dois")
