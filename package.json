@@ -6,13 +6,19 @@
     "email": "lizarb@venturim.me"
   },
   "dependencies": {
+    "@mmisty/cypress-allure-adapter": "^3.2.3",
+    "allure-commandline": "^2.32.2",
     "cypress": "^14.0.2",
     "faker-br": "^0.4.1",
     "prettier": "^3.5.0"
   },
   "scripts": {
     "cypress:open": "cypress open",
-    "test": "cypress run",
-    "format": "prettier --write \"**/*.{js,ts,json,md,yml}\""
+    "test": "cypress run --env allure=true",
+    "format": "prettier --write \"**/*.{js,ts,json,md,yml}\"",
+    "result": "allure generate --clean && allure open"
+  },
+  "devDependencies": {
+    "allure-cypress": "^3.1.0"
   }
 }
