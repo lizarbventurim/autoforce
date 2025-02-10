@@ -51,3 +51,7 @@ O Prettier é uma ferramenta que ajuda a manter o código formatado de maneira c
 ```sh 
 npm run format
 ```
+
+## Custom Commands
+Os comandos customizados do Cypress estão definidos no arquivo *cypress/support/commands.js*.
+*cy.fillLeadForm()* preenche o formulário de cadastro de leads.
