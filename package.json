@@ -6,7 +6,8 @@
     "email": "lizarb@venturim.me"
   },
   "dependencies": {
-    "cypress": "^14.0.2"
+    "cypress": "^14.0.2",
+    "faker-br": "^0.4.1"
   },
   "scripts": {
     "cypress:open": "cypress open",
