@@ -1,2 +1,2 @@
-import './commands'
-import '@mmisty/cypress-allure-adapter/support';
+import "./commands"
+import "@mmisty/cypress-allure-adapter/support"
