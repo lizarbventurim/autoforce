@@ -15,8 +15,6 @@ describe("Validar fluxo de listagem de veículo específico", () => {
     cy.title().should("eq", "Fiat é na Layout testes - Showroom Fiat 2.0 - Dois")
     cy.get(veiculosNovos).contains("Novos").click()
     cy.url().should("include", "/novos")
-
-    cy.visit("/")
     cy.get(selectVeiculo).contains("Uno 2021").should("be.visible").click()
     cy.url().should("include", "/novos/uno-2021")
     cy.fillLeadForm(name, email, telefone + "0", cpf)
