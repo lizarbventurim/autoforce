@@ -27,6 +27,12 @@ cd desafio-tecnico-autoforce
 npm install
 ```
 
+## Configuração do JDK (Java Development Kit)
+
+Para executar os relatórios testes, é necessário ter o JDK instalado na máquina. O JDK pode ser baixado no site: https://bell-sw.com/pages/downloads/#jdk-21-lts baixar a versão 21.2.0 LTS. baseado na versão do seu sistema operacional.
+Os testes estão utilizando allure report para gerar os relatórios.
+
+
 ## Execução dos Testes
 ### Abrir o Cypress
 Para abrir a interface do Cypress e executar os testes manualmente, utilize o comando:
@@ -55,3 +61,12 @@ npm run format
 ## Custom Commands
 Os comandos customizados do Cypress estão definidos no arquivo *cypress/support/commands.js*.
 *cy.fillLeadForm()* preenche o formulário de cadastro de leads.
+
+
+## Relatórios de testes
+
+Os relatórios de testes são gerados utilizando o Allure Report. Para gerar o relatório, utilize o comando:
+
+```sh
+npm run results
+```
