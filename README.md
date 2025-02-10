@@ -17,12 +17,12 @@ Os cenários de teste estão descritos no arquivo [CENARIOS.md](CENARIOS.md).
 1. Clone o repositório:
 
 ```sh
-git clone https://github.com/seu-usuario/desafio-tecnico-autoforce.git
+git clone git@github.com:lizarbventurim/autoforce.git
 
 ``` 
 2. Navegue até o diretório do projeto:
 ```sh
-cd desafio-tecnico-autoforce
+cd autoforce
 ```
 ```sh
 npm install
