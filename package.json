@@ -16,7 +16,7 @@
     "cypress:open": "cypress open",
     "test": "cypress run --env allure=true",
     "format": "prettier --write \"**/*.{js,ts,json,md,yml}\"",
-    "result": "allure generate --clean && allure open"
+    "result": "allure generate --clean && allure open --host localhost"
   },
   "devDependencies": {
     "allure-cypress": "^3.1.0"

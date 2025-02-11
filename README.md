@@ -11,6 +11,7 @@ Os cenários de teste estão descritos no arquivo [CENARIOS.md](CENARIOS.md).
 - Node.js (versão 20 ou superior)
 - npm (gerenciador de pacotes do Node.js)
 - JDK (Java Development Kit) - versão aconselhada 21.2.0 LTS
+- Docker (opcional, para executar o ambiente de testes)
 
 ## Instalação
 
@@ -78,3 +79,18 @@ Os relatórios de testes são gerados utilizando o Allure Report. Para gerar o r
 ```sh
 npm run results
 ```
+
+## Docker - Executar os testes
+
+Para executar os testes utilizando o Docker, utilize o comando:
+
+```sh
+docker-compose up
+```
+
+Para exibir o resultado do teste no Allure Report, após a execução dos testes executados no docker, utilize o comando:
+
+```sh
+npm run results
+```
+

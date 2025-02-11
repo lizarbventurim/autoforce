@@ -1,0 +1,10 @@
+services:
+  cypress:
+    image: cypress/included:14.0.2
+    container_name: "autoforce"
+    volumes:
+      - .:/e2e
+    working_dir: /e2e
+    command: cypress run --env allure=true
+
+    
