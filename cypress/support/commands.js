@@ -12,5 +12,7 @@ Cypress.Commands.add("fillLeadForm", (name, email, phone, cpf) => {
   cy.get('input[type="phone"]').should("be.visible").type(phone)
   cy.get('input[name="cpf"]').should("be.visible").type(cpf)
   cy.get('button[type="submit"]').contains("Enviar").should("be.visible").click()
+  cy.intercept("POST", "https://boxoffice.autoforce.com/latest/").as("postLead")
+  cy.wait("@postLead")
   cy.get(validaEnvio).contains("Solicitação realizada com sucesso!").should("be.visible")
 })
